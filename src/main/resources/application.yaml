@@ -1,0 +1,24 @@
+server:
+  port: 9000
+
+# R2DBC Configuration
+spring:
+  r2dbc:
+    url: r2dbc:h2:file:///./db/testdb?options=DB_CLOSE_DELAY=-1;
+    username: sa
+    password:
+    pool:
+      initial-size: 100
+      max-size: 500
+      max-idle-time: 30m
+    initialization-mode: always
+
+# Logging
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
+    dev:
+      mchu:
+        demo: DEBUG

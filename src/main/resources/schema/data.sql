@@ -1,0 +1,1 @@
+INSERT INTO `calendars` (`id`, `title`) VALUES (1, 'Thai Holiday 2022');
